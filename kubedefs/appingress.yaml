@@ -7,12 +7,13 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: vprofile.khwajamuzamil.lol
-    http:
-    - paths: /
-      pathType: Prefix
-      backend:
-        service:
-          name: vproapp-service
-          port:
-            number: 8080
+    - host: vprofile.khwajamuzamil.lol
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: vproapp-service
+                port:
+                  number: 8080
