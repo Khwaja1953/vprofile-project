@@ -9,7 +9,7 @@ spec:
   rules:
   - host: vprofile.khwajamuzamil.lol
     http:
-      paths: /
+    - paths: /
       pathType: Prefix
       backend:
         service:
